@@ -23,7 +23,7 @@ const Select: React.FC = () => {
       color="black"
     >
       {prefectures.map((p) => (
-        <option key={p.code} value={prefectureCode[p.code].en}>
+        <option key={p.code} value={prefectureCode[p.code]?.en}>
           {p.name}
         </option>
       ))}
