@@ -16,8 +16,7 @@
     "lint:conflict": "eslint-config-prettier 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:style": "stylelint 'src/**/*.{css,less,sass,scss}'",
     "lint:style:fix": "stylelint --fix 'src/**/*.{css,less,sass,scss}'",
-    "precommit": "lint-staged",
-    "preinstall": "typesync"
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.2",

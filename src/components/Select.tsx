@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext } from 'react';
 import { Select as SelectValue } from '@chakra-ui/react';
 import { prefectures } from 'data/prefectures';
 import { prefectureCode } from 'data/prefectureCode';

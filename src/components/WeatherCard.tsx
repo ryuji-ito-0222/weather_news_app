@@ -11,7 +11,6 @@ import { selectPlace } from '../features/placeSlice';
 const WeatherCard: React.FC = () => {
   const place = useSelector(selectPlace);
   const { data } = useSWR(createURL('weather', `${place},JP`));
-  console.log(data);
 
   return !data ? (
     <Spinner mx="auto" size="xl" mt={20} />
