@@ -78,7 +78,7 @@
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "prettier --write --loglevel=warn",
-      "eslint --fix"
+      "yarn lint"
     ],
     "src/**/*.{css,less,sass,scss}": [
       "stylelint --fix"
