@@ -1,7 +1,6 @@
 import React, { createContext } from 'react';
 import { Select as SelectValue } from '@chakra-ui/react';
 import { prefectures } from 'data/prefectures';
-import { prefectureCode } from 'data/prefectureCode';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectPlace, setPlace } from 'features/placeSlice';
 
@@ -20,10 +19,10 @@ const Select: React.FC = () => {
       mr="3"
       borderColor="white"
       backgroundColor="white"
-      color="black"
+      color="gray.500"
     >
       {prefectures.map((p) => (
-        <option key={p.code} value={prefectureCode[p.code]?.en}>
+        <option key={p.id} value={p.en}>
           {p.name}
         </option>
       ))}

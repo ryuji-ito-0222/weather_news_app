@@ -10,7 +10,7 @@ const DarkModeSwitch: React.FC = () => {
       aria-label="Toggle Dark Switch"
       onClick={toggleColorMode}
       icon={colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
-      color={colorMode === 'dark' ? 'red.500' : 'black'}
+      color={colorMode === 'dark' ? 'red.500' : 'gray.500'}
       backgroundColor="white"
       _focus={{ outline: 'none' }}
     />
