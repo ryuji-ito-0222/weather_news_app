@@ -41,7 +41,7 @@ const WeatherCard: React.FC = () => {
       </Heading>
       <Image
         width={350}
-        height={250}
+        height={230}
         src={weatherImage[data?.weather[0].main]}
         alt={data?.weather[0].main}
       />

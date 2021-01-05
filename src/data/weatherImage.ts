@@ -3,4 +3,6 @@ export const weatherImage: { [index: string]: string } = {
   Rain: '/image/rain.jpg',
   Clear: '/image/sonny.jpg',
   Snow: '/image/snow.jpg',
+  Drizzle: '/image/drizzle.jpg',
+  Thunderstorm: '/image/thunderstorm.jpg',
 };

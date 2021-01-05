@@ -12,14 +12,13 @@ const SelectPrefecture: React.FC = () => {
 
   return (
     <Select
-      placeholder="場所の選択"
-      value={place}
-      onChange={(e) => dispatch(setPlace(e.target.value))}
-      width="180px"
       mr="3"
+      width="180px"
+      color="gray.500"
       borderColor="white"
       backgroundColor="white"
-      color="gray.500"
+      value={place}
+      onChange={(e) => dispatch(setPlace(e.target.value))}
     >
       {prefectures.map((p) => (
         <option key={p.id} value={p.en}>

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 import React from 'react';
-import '../styles/globals.scss';
+import 'globals.scss';
 import { ChakraProvider, theme } from '@chakra-ui/react';
 import { AppProps } from 'next/app';
 import { SWRConfig } from 'swr';
@@ -13,7 +13,7 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => (
     <ChakraProvider theme={theme}>
       <SWRConfig
         value={{
-          fetcher: (url: string) => axios(url).then((r) => r.data),
+          fetcher: (url: string) => axios(url).then((res) => res.data),
         }}
       >
         <Component {...pageProps} />
