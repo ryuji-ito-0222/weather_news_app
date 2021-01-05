@@ -1,21 +1,21 @@
 import React, { createContext } from 'react';
-import { Select as SelectValue } from '@chakra-ui/react';
+import { Select } from '@chakra-ui/react';
 import { prefectures } from 'data/prefectures';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectPlace, setPlace } from 'features/placeSlice';
 
 export const PlaceContext = createContext('');
 
-const Select: React.FC = () => {
+const SelectPrefecture: React.FC = () => {
   const place = useSelector(selectPlace);
   const dispatch = useDispatch();
 
   return (
-    <SelectValue
+    <Select
       placeholder="場所の選択"
       value={place}
       onChange={(e) => dispatch(setPlace(e.target.value))}
-      width="200px"
+      width="180px"
       mr="3"
       borderColor="white"
       backgroundColor="white"
@@ -26,8 +26,8 @@ const Select: React.FC = () => {
           {p.name}
         </option>
       ))}
-    </SelectValue>
+    </Select>
   );
 };
 
-export default Select;
+export default SelectPrefecture;

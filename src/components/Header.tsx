@@ -1,16 +1,16 @@
 import React from 'react';
 import { Flex, Heading, Stack } from '@chakra-ui/react';
 import DarkModeSwitch from './DarkModeSwitch';
-import Select from './Select';
+import SelectPrefecture from './SelectPrefecture';
 
 const Header: React.FC = () => (
   <Stack
     as="header"
-    backgroundColor="blue.200"
+    backgroundColor="blue.100"
     py={2}
     px={4}
     width="100vw"
-    borderRadius="0 0 3px 3px"
+    borderRadius="0 0 4px 4px"
   >
     <Flex
       width="100%"
@@ -23,7 +23,7 @@ const Header: React.FC = () => (
         Weather News
       </Heading>
       <Flex>
-        <Select />
+        <SelectPrefecture />
         <DarkModeSwitch />
       </Flex>
     </Flex>

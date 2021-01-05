@@ -3,11 +3,11 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from 'app/store';
 
 interface PlaceState {
-  place: string;
+  prefecture: string;
 }
 
 const initialState: PlaceState = {
-  place: 'tokyo',
+  prefecture: 'tokyo',
 };
 
 export const placeSlice = createSlice({
@@ -15,11 +15,11 @@ export const placeSlice = createSlice({
   initialState,
   reducers: {
     setPlace: (state, action: PayloadAction<string>) => {
-      state.place = action.payload;
+      state.prefecture = action.payload;
     },
   },
 });
 
 export const { setPlace } = placeSlice.actions;
 
-export const selectPlace = (state: RootState): string => state.place.place;
+export const selectPlace = (state: RootState): string => state.place.prefecture;
