@@ -9,11 +9,7 @@ import useSWR from 'swr';
 import { createURL } from 'api';
 import Header from './Header';
 
-interface LayoutProps {
-  title?: string;
-}
-
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
   const place = useSelector(selectPlace);
   const { data } = useSWR(createURL('weather', `${place},JP`));
 

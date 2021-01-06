@@ -15,11 +15,11 @@ const SelectPrefecture: React.FC = () => {
       mr="3"
       width="180px"
       color="gray.500"
+      fontWeight="bold"
       borderColor="white"
       backgroundColor="white"
       value={place}
       onChange={(e) => dispatch(setPlace(e.target.value))}
-      fontWeight="bold"
     >
       {prefectures.map((p) => (
         <option key={p.id} value={p.en}>
