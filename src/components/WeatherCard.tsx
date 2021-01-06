@@ -26,7 +26,15 @@ const WeatherCard: React.FC = () => {
   );
 
   return !data ? (
-    <Spinner mx="auto" size="xl" mt={20} />
+    <Spinner
+      mx="auto"
+      size="xl"
+      mt={20}
+      speed="0.6s"
+      thickness="4px"
+      color="blue.500"
+      emptyColor="gray.200"
+    />
   ) : (
     <Box py={3} borderWidth="2px" borderRadius="lg" maxWidth="500px" mx="auto">
       <Heading
@@ -40,9 +48,9 @@ const WeatherCard: React.FC = () => {
         {data?.name}の現在の天気
       </Heading>
       <Image
-        width={350}
+        width={330}
         height={230}
-        src={weatherImage[data?.weather[0].main]}
+        src={weatherImage[data?.weather[0].main] ?? '/image/noImage.jpg'}
         alt={data?.weather[0].main}
       />
       <Flex direction="column">

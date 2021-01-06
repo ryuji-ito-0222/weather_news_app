@@ -6,11 +6,14 @@ import SelectPrefecture from './SelectPrefecture';
 const Header: React.FC = () => (
   <Stack
     as="header"
-    backgroundColor="blue.100"
     py={2}
     px={4}
+    top={0}
     width="100vw"
+    position="sticky"
     borderRadius="0 0 4px 4px"
+    backgroundColor="blue.100"
+    zIndex={100}
   >
     <Flex
       width="100%"

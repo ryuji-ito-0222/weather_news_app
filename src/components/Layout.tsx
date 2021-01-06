@@ -24,7 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Stack as="main" width="100vw" maxWidth="800px" mx="auto" px={5} py={2}>
+      <Stack as="main" width="100vw" maxWidth="800px" mx="auto" px={4} py={2}>
         {children}
       </Stack>
     </>
